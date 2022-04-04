@@ -12,10 +12,6 @@ class Person < Nameable
     @parent_permission = parent_permission
   end
 
-  def correct_name
-    @name
-  end
-
   private
 
   def of_age?
