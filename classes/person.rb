@@ -12,7 +12,7 @@ class Person < Nameable
     @parent_permission = parent_permission
   end
 
-  def correct_name
+   def correct_name
     @name
   end
 
