@@ -8,7 +8,6 @@ class Person
     @name = name
     @age = age
     @parent_permission = parent_permission
-    @rental = []
   end
 
   private
