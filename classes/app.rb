@@ -75,4 +75,20 @@ class App
     puts 'Database is empty! Add a person.' if @people.empty?
     @people.each { |person| puts "[#{person.class.name}] Name: #{person.name}, Age: #{person.age}, id: #{person.id}" }
   end
+
+  def create_book()
+    puts 'Create a new book'
+    print 'Enter title: '
+    title = gets.chomp
+    puts 'Enter author: '
+    author = gets
+    book = Book.new(title, author)
+    @books.push(book)
+    puts "Book #{title} created successfully."
+  end
+
+  def list_all_books
+    puts 'Database is empty! Add a book.' if @books.empty?
+    @books.each { |book| puts "[Book] Title: #{book.title}, Author: #{book.author}" }
+  end
 end
