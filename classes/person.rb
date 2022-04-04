@@ -12,7 +12,7 @@ class Person
   
   def correct_name
     @name
- end
+  end
 
   private
 
