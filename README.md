@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# School Library - Ruby
+# School Library
 
 
 ## Class diagram for OOP school library
