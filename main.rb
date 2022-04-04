@@ -28,7 +28,7 @@ def option(input)
   when '4'
     create_book
   when '5'
-    create_rentals
+    create_rental
   when '6'
     list_all_rentals
   else
