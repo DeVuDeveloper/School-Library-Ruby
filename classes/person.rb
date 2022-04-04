@@ -13,7 +13,7 @@ class Person < Nameable
     @rentals = []
   end
 
-  def add_rental(rental)
+  def add_rentals(rental)
     @rentals.push(rental)
     rental.person = self
   end
