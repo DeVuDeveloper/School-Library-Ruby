@@ -27,8 +27,9 @@ class App
 
   def create_person
     print 'To create a student, press 1, to create a teacher, press 2 : '
-    option = gets.chomp
 
+    option = gets
+    puts 'Invalid input. Try again'
     case option
     when '1'
       create_student
