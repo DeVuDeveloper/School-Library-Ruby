@@ -3,9 +3,16 @@ class Rental
 
   def initialize(date, book, person)
     @date = date
-    @person = person
-    person.rentals << self
     @book = book
-    book.rentals << self
+    @person = person
+  end
+
+  def to_json(_args = {})
+    {
+      'rental' => self.class.name,
+      'date' => @date,
+      'book' => @book,
+      'person' => @person
+    }
   end
 end

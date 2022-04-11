@@ -1,8 +1,15 @@
-require './classes/app'
+require_relative './classes/user_options'
+require_relative './classes/create_list_books'
+require_relative './classes/create_list_persones'
+require_relative './classes/create_list_rentals'
+require_relative './classes/book'
+require_relative './classes/student'
+require_relative './classes/teacher'
+require_relative './classes/rental'
 
 def main
-  app = App.new
-  app.console_entry_point
+  option = UserOptions.new
+  option.console_entry_point
 end
 
 def list_of_options
@@ -20,17 +27,18 @@ end
 def option(input)
   case input
   when '1'
-    list_all_books
+    @books.list_all_books
   when '2'
-    list_all_people
+    @persones.list_all_persones
   when '3'
-    create_person
+    @persones.create_person
   when '4'
-    create_book
+    @books.create_book
   when '5'
-    create_rental
+    @rentals.create_rental
   when '6'
-    list_all_rentals
+    @rentals.list_all_rentals
+
   else
     puts 'Please enter a number between 1 and 7.'
   end
