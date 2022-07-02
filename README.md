@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # School Library
 
 
@@ -39,10 +37,6 @@ Feel free to check the [issues page](https://github.com/VuDej/School-Library-Rub
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-A special thanks to Microverse.
 
 ## 📝 License
 
